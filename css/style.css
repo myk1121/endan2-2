@@ -1,7 +1,6 @@
 @charset "utf-8";
 
 
-
 /*全端末（PC・タブレット・スマホ）共通設定
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -39,7 +38,7 @@ a:hover {
 /*inner共通
 ---------------------------------------------------------------------------*/
 .inner {
-	max-width: 1400px;	/*サイトの最大幅*/
+	max-width: 1100px;	/*サイトの最大幅*/
 	margin: 0 auto;
 }
 
@@ -65,6 +64,9 @@ header {
 	overflow: auto;
 	position: relative;
 }
+.header-logo {
+  width: 32%;
+}
 
 .bg-slider {
 	width: 100%;
@@ -86,9 +88,21 @@ header {
 
 /*ロゴ画像（トップページ以外。トップページのロゴは上の#top headerのbackgroundで指定しています。）*/
 header #logo img {
-	width: 300px;	/*幅*/
-	float: left;	/*左に回り込み*/
-	padding-top: 12px;	/*上に空ける余白。ヘッダーブロックに対する上下バランスをここで調整して下さい。*/
+  height: 74px;
+  float: left;	/*左に回り込み*/
+  padding: 3px 0;
+}
+
+@media screen and (max-width:800px){
+  .header-logo {
+    width: 50%;
+  }
+}
+@media screen and (max-width:450px){
+  .header-logo {
+    width: 65%;
+    padding-top: 60px;
+  }
 }
 
 /*メインメニュー（※トップページ以外）
@@ -152,10 +166,11 @@ header + #menubar-s + .contents {
 	clear: both;
 	margin-bottom: 20px;
 	font-size: 20px;		/*文字サイズ*/
-	background: #ff9313;	/*背景色*/
-	border-radius: 30px;	/*角丸のサイズ*/
+	background: linear-gradient(135deg, #ff9313, #ff4d4d);	/*背景色*/
+	border-radius: 20px;	/*角丸のサイズ*/
 	color: #fff;			/*文字色*/
-	padding: 5px 20px;		/*上下、左右への余白*/
+  padding: 5px 20px;		/*上下、左右への余白*/
+  box-shadow: 4px 4px 5px #696969;
 }
 /*コンテンツのh3タグの設定*/
 .contents h3 {
@@ -270,7 +285,8 @@ header + #menubar-s + .contents {
 	border-radius: 0;
 	margin-bottom: 0;
 	background: #999;
-	text-align: center;	/*内容をセンタリング*/
+  text-align: center;	/*内容をセンタリング*/
+  box-shadow: none;
 }
 /*subコンテンツ内の段落タグ設定*/
 .sub p {
@@ -319,8 +335,9 @@ header + #menubar-s + .contents {
 	margin-bottom: 0;
 }
 
-/*フッター設定
----------------------------------------------------------------------------*/
+/* ====================
+footer
+==================== */
 footer {
 	clear: both;
 	background: #ff9313;	/*背景色*/
@@ -339,19 +356,16 @@ footer .pr {
 	font-size: 80%;
 }
 
-/*フッターメニュー
----------------------------------------------------------------------------*/
-/*ボックス全体*/
-#footermenu {
+.footer-menu {
 	overflow: hidden;
 	padding: 20px 3%;
 }
 /*１行分の設定*/
-#footermenu ul {
-	float: left;	/*左に回り込み*/
-	width: 18%;		/*幅。今回は５列作ったのでここの幅18%と下のpadding(合計の2%)でトータル20%になるよう設定。列に応じて調整して下さい。*/
-	padding-right: 1%;
-	padding-left: 1%;
+.footer-menu ul {
+  display: flex;
+}
+.footer-menu-item {
+	padding: 10px 18px 10px 0;
 }
 
 /*コピーライト

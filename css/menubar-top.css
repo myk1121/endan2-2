@@ -14,7 +14,7 @@
 #menubar-top li a {
 	text-decoration: none;
 	display: block;
-	border: 5px solid #fff;	/*枠線の幅、選手、色*/
+	border: 4px solid #fff;	/*枠線の幅、選手、色*/
 	border-radius: 50%;	/*角丸のサイズ*/
 	width: 150px;		/*メニューの幅*/
 	line-height: 150px;	/*メニューの高さ*/
@@ -43,7 +43,7 @@
 #menubar-top li#menu2 {
 	position: absolute;
 	left: 8%;	/*左から8%の場所に配置*/
-	top: 35%;	/*上から35%の場所に配置*/
+	top: 32%;	/*上から35%の場所に配置*/
 	animation-delay: 0.2s;	/*0.2秒だけ遅れてアニメーションをスタートさせる設定*/
 }
 /*メニュー３つ目（SERVICE）*/
