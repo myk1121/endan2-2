@@ -365,7 +365,7 @@ footer .pr {
   display: flex;
 }
 .footer-menu-item {
-	padding: 10px 18px 10px 0;
+	padding: 10px 15px 10px 0;
 }
 
 /*コピーライト
@@ -501,7 +501,6 @@ figure.item {padding: 0px 20px 20px;text-align: center;}
 /*ロゴ画像（トップページ以外。トップページのロゴは上の#top headerのbackgroundで指定しています。）*/
 header #logo img {
 	width: 200px;	/*幅*/
-	padding-top: 21px;	/*上に空ける余白。ヘッダーブロックに対する上下バランスをここで調整して下さい。*/
 }
 
 }
