@@ -166,7 +166,7 @@ header + #menubar-s + .contents {
 	clear: both;
 	margin-bottom: 20px;
 	font-size: 20px;		/*文字サイズ*/
-	background: linear-gradient(135deg, #ff9313, #ff4d4d);	/*背景色*/
+	background: linear-gradient(5deg, #ff9313, #ff4d4d);	/*背景色*/
 	border-radius: 20px;	/*角丸のサイズ*/
 	color: #fff;			/*文字色*/
   padding: 5px 20px;		/*上下、左右への余白*/
@@ -423,7 +423,8 @@ footer .pr {
 .ta1 th {
 	width: 140px;	/*幅*/
 	text-align: center;	/*センタリング*/
-	font-weight: normal;
+	font-weight: bold;
+	background-color: #fcf2e9fb;
 }
 /*左側ボックスに画像を入れた場合の設定*/
 .ta1 th img {
